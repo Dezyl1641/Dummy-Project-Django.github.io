@@ -1,0 +1,42 @@
+{% extends "blog/base.html" %}
+{%block content%}
+
+<nav><img class="logo" src="/static/blog/Logo.png"/><div class="org">
+    AluminiDB</div></nav>
+
+<section class="formbox">
+    <form action="" method="POST">  
+        {%csrf_token%} 
+        <fieldset>
+        <div class="form-entry">
+        <input type="text" id="nameofperson" name="fullname" placeholder="Name"></div>
+        <div class="form-entry">
+        <input type="text" id="companyofperson" name="company" placeholder="Company"></div>
+        <div class="form-entry">
+        <input type="text" id="designationofperson" name="position" placeholder="Designation"></div>
+
+        <button type="submit">Add</button>
+        </fieldset>
+    </form>
+</section>
+
+
+
+{% for post in posts %}
+    <!-- <h1>{{ post.fullname }}</h1>
+    <p>{{ post.position }} at {{post.company}}</p> -->
+
+    <section>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <div class="avatar"><img src="/static/blog/Avatar.png"></div>
+                <div class="contentbox">
+                    <h3><span>{{ post.fullname }}<br></span>{{ post.position }} at {{post.company}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endfor %} 
+{%endblock%}

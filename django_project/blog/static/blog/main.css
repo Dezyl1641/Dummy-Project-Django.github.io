@@ -1,0 +1,134 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    background: rgb(247, 248, 247);
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 20px;
+    /* gap: 20px; */
+}
+
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    background: white;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+.container .card .content .avatar{
+    position: relative;
+    border-radius: 50%;
+}
+
+.container .card .content .contentbox{
+    color: rgba(0,0,0,0.8);
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.container .card .content .contentbox h3 span{
+    color: #02A689;
+    margin-bottom: 20px;
+}
+
+.logo
+{
+Width:30px;
+Height:30px;
+margin-right: -5px;
+margin-left: 25px;
+padding: 10px;
+
+}
+
+nav
+{
+Display: flex;
+/* Align-items: center;
+Justify-content: center; */
+background-color: white;
+box-shadow: 0 0 5px rgba(0,0,0,0.2);
+color: #02A689;
+width: 100%;
+height: 50px;
+}
+
+.org{
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+input{
+    margin: 10px;
+    background: #F1F1F1;
+    border-radius: 40px;
+    width: 40%;
+    border-style: hidden;
+    height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+}
+
+button{
+    color: white;
+    border-radius: 5px;
+    background: #02A689;
+    width: 45px;
+    border-style: hidden;
+    height: 25px;
+
+}
+
+.formbox{
+    width: 100%;
+    
+}
+
+
+fieldset{
+    width: 60%;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-top: 30px;
+    margin-left: 20%;
+    border-radius: 10px;
+    padding: 10px;
+    
+    border-style: hidden;
+}
+
+
